@@ -1,0 +1,15 @@
+.btn__expand{
+    transform: rotate(180deg);
+}
+
+.swiper{
+    display: none;
+    visibility: hidden;
+}
+
+.labels__lenovo2, .labels__samsung2, .labels__apple2, .labels__sony, .labels__view-sonic{
+    display: none;
+    visibility: hidden;
+    
+ }
+ 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one point six 1.6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="tablets.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="desktop.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="wrapper-header">
+        <h1 class="wrapper-header__title">Ремонт техники различных брендов</h1>
+    </div>
+
+        
+
+
+    <main>
+        <div class="labels">
+            <div class="labels__wrapper">
+                <img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo">
+                <img src="samsung.svg" alt="samsung logo" class="labels__samsung">
+                <img src="ringo.svg" alt="apple logo" class="labels__apple">
+                <img src="viewSonic.svg" alt="view sonic logo" class="labels__view-sonic">
+                <img src="bosch.svg" alt="bosch logo" class="labels__bosch">
+                <img src="hp.svg" alt="hp logo" class="labels__hp">
+                <img src="acer.svg" alt="acer logo" class="labels__acer">
+                <img src="sony.svg" alt="sony logo" class="labels__sony">
+                <img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo2">
+                <img src="samsung2.svg" alt="samsung logo" class="labels__samsung2">
+                <img src="ringo2.svg" alt="apple logo" class="labels__apple2">
+            </div>
+
+
+
+        </div> 
+
+        <!--for mobile swipers-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="samsung.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="ringo.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="viewSonic.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+            <div class="swiper-slide"><img src="bosch.svg" alt="bosch logo" class="labels__bosch"></div>
+            <div class="swiper-slide"><img src="hp.svg" alt="hp logo" class="labels__hp"></div>
+            <div class="swiper-slide"><img src="acer.svg" alt="acer logo" class="labels__acer"></div>
+            <div class="swiper-slide"><img src="sony.svg" alt="sony logo" class="labels__sony"></div>
+            <div class="swiper-slide"><img src="lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="samsung2.svg" alt="samsung logo" class="labels__samsung2"></div>
+            <div class="swiper-slide"><img src="ringo2.svg" alt="apple logo" class="labels__apple"></div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        
+
+
+        <button class="btn">
+            <div class="btn__wrapper">
+                <img src="expand.svg" alt="expand logo" class="btn__expand">
+                <span class="btn__text">Показать все</span>
+            </div>
+        </button>
+    </main>
+</body>
+</html>
