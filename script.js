@@ -26,7 +26,7 @@ let button = document.querySelector("button.btn");
 let lenovo2 = document.querySelector("img.labels__lenovo2");
 let apple2 = document.querySelector("img.labels__apple2");
 let samsung2 = document.querySelector("img.labels__samsung2");
-let expand = document.querySelector("img.btn__expand");
+let expand = document.querySelector("span.btn__expand");
 let text = document.querySelector("span.btn__text");
 
 //setting variables for tablet version
