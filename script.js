@@ -37,7 +37,7 @@ let sony = document.querySelector("img.labels__sony");
 
 
 
-if ($(window).width() > 767 && $(window).width() <= 1199 ) {
+if ($(window).width() > 767 && $(window).width() <= 1119 ) {
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
       lenovo2.setAttribute("style", "visibility:hidden; display:none;");
@@ -59,7 +59,7 @@ if ($(window).width() > 767 && $(window).width() <= 1199 ) {
     }
   })
 }
-else if ($(window).width() >= 1200){
+else if ($(window).width() >= 1120){
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
       lenovo2.setAttribute("style", "visibility:hidden; display:none;");
