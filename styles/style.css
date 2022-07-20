@@ -5,8 +5,14 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'TTLakes-Regular';
+    src: url('../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-/*TTLakes-Medium*/
+}
+/*TTLakes-Regular*/
 :root{
     --light-blue:#41f6d7;
     --bg-color:#fff;
@@ -59,7 +65,9 @@ button.btn{
     column-gap: 5px;
     margin-left: 15px;
     width: 180px;
-
+    border-radius: 20%;
+    outline:  2px solid #fff;
+    transition: all 500ms ease-out;
     
 
     
@@ -83,6 +91,7 @@ button.btn{
     row-gap: 15px;
 }
 .btn__text{
+    font-family: "TTLakes-Regular", sans-serif;
     font-size: 20px;
 }
 
