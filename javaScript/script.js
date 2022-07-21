@@ -1,6 +1,8 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-
+  slidesPerView: 1.3,
+  centeredSlides: false,
+  spaceBetween: 1,
 
   // If we need pagination
   pagination: {
@@ -11,6 +13,8 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+
+ 
   },
 
   // And if we need scrollbar
@@ -77,4 +81,3 @@ else if ($(window).width() >= 1120){
     }
   })
 }
-
