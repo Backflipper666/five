@@ -12,4 +12,7 @@
     visibility: hidden;
     
  }
- 
+ .labels__logo{
+    width: 224px;
+    height: 72px;
+ }
