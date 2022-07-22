@@ -39,7 +39,8 @@ let sony = document.querySelector("img.labels__sony");
 
 //query selector to hide logos for tablet 
 let tablet = document.querySelectorAll("img.tablet")
-console.log(tablet);
+//qs to hide for desktop
+let desktop = document.querySelectorAll("img.desktop")
 
 if (window.matchMedia("screen and (min-width: 767px) and (max-width:1119px)").matches) {  
   button.addEventListener("click", ()=>{
@@ -66,16 +67,18 @@ if (window.matchMedia("screen and (min-width: 767px) and (max-width:1119px)").ma
 else if (window.matchMedia('screen and (min-width: 1120px)').matches) {
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
-      lenovo2.setAttribute("style", "visibility:hidden; display:none;");
-      apple2.setAttribute("style", "visibility:hidden; display:none;");
-      samsung2.setAttribute("style", "visibility:hidden; display:none;");
+      for(let element of desktop){
+        element.classList.remove("shower")
+        element.classList.add("hider");
+      }
       expand.setAttribute("style", "transform:rotate(180deg);")
       text.textContent = "Показать все";
     }
     else{
-      lenovo2.setAttribute("style", "visibility:visible; display:inline-block;");
-      apple2.setAttribute("style", "visibility:visible; display:inline-block;");
-      samsung2.setAttribute("style", "visibility:visible; display:inline-block;");
+      for(let element of desktop){
+        element.classList.remove("hider")
+        element.classList.add("shower")
+      }
       expand.setAttribute("style", "transform:rotate(360deg);")
       text.textContent = "Скрыть";
     }
