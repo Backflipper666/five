@@ -37,8 +37,7 @@ let text = document.querySelector("span.btn__text");
 let viewSonic = document.querySelector("img.labels__view-sonic");
 let sony = document.querySelector("img.labels__sony");
 
-if (window.matchMedia("screen and (min-width: 767px) and (max-width:1119px)").matches) {
-  // ... действия, если устройство отвечает медиа-запросу
+if (window.matchMedia("screen and (min-width: 767px) and (max-width:1119px)").matches) {  
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
       lenovo2.setAttribute("style", "visibility:hidden; display:none;");
@@ -63,7 +62,6 @@ if (window.matchMedia("screen and (min-width: 767px) and (max-width:1119px)").ma
 } 
 
 else if (window.matchMedia('screen and (min-width: 1120px)').matches) {
-  // ... действия, если устройство отвечает медиа-запросу
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
       lenovo2.setAttribute("style", "visibility:hidden; display:none;");

@@ -55,12 +55,12 @@ html{
 .wrapper-header__title::after{
     content: "";
     height: 40px;
-    width: 30px;
+    width: 50px;
     position: absolute;
     right: -20px;
     top: 100px;
     z-index: 2;
-    background-image: linear-gradient(to left, white, transparent);
+    background-image: linear-gradient(to left, white 50%, transparent);
 }
 .swiper-pagination-bullet {
     width: 12px !important;
