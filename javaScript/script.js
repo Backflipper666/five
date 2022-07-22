@@ -40,8 +40,10 @@ let sony = document.querySelector("img.labels__sony");
 
 
 
-
-if ($(window).width() > 767 && $(window).width() <= 1119 ) {
+ if (
+  window.matchMedia("screen and (min-width: 767px) and (max-width:1119px)")
+    .matches
+) {
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
       lenovo2.setAttribute("style", "visibility:hidden; display:none;");
@@ -61,9 +63,32 @@ if ($(window).width() > 767 && $(window).width() <= 1119 ) {
       expand.setAttribute("style", "transform:rotate(360deg);")
       text.textContent = "Скрыть";
     }
-  })
-}
-else if ($(window).width() >= 1120){
+  }).then(() => {
+    console.log("tablets imported hallelujaj");
+  });
+} 
+else if (window.matchMedia("screen and (min-width: 1120px)").matches) {
+  button.addEventListener("click", ()=>{
+    if (text.textContent == "Скрыть"){
+      lenovo2.setAttribute("style", "visibility:hidden; display:none;");
+      apple2.setAttribute("style", "visibility:hidden; display:none;");
+      samsung2.setAttribute("style", "visibility:hidden; display:none;");
+      expand.setAttribute("style", "transform:rotate(180deg);")
+      text.textContent = "Показать все";
+    }
+    else{
+      lenovo2.setAttribute("style", "visibility:visible; display:inline-block;");
+      apple2.setAttribute("style", "visibility:visible; display:inline-block;");
+      samsung2.setAttribute("style", "visibility:visible; display:inline-block;");
+      expand.setAttribute("style", "transform:rotate(360deg);")
+      text.textContent = "Скрыть";
+    }
+  }).then(() => {
+    console.log("desktop imported hallelujaj");
+  });
+} 
+
+/* else if ($(window).width() >= 1120){
   button.addEventListener("click", ()=>{
     if (text.textContent == "Скрыть"){
       lenovo2.setAttribute("style", "visibility:hidden; display:none;");
@@ -80,4 +105,4 @@ else if ($(window).width() >= 1120){
       text.textContent = "Скрыть";
     }
   })
-}
+} */
