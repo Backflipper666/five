@@ -16,3 +16,11 @@
     width: 224px;
     height: 72px;
  }
+ .hider{
+    visibility: hidden;
+    display: none;
+}
+.shower{
+    visibility: visible;
+    display: inline-block;
+}
