@@ -26,16 +26,8 @@ const swiper = new Swiper('.swiper', {
 });
 
 let button = document.querySelector("button.btn");
-//.labels__lenovo2, .labels__samsung2, .labels__apple2
-let lenovo2 = document.querySelector("img.labels__lenovo2");
-let apple2 = document.querySelector("img.labels__apple2");
-let samsung2 = document.querySelector("img.labels__samsung2");
 let expand = document.querySelector("span.btn__expand");
 let text = document.querySelector("span.btn__text");
-
-//setting variables for tablet version
-let viewSonic = document.querySelector("img.labels__view-sonic");
-let sony = document.querySelector("img.labels__sony");
 
 //query selector to hide logos for tablet 
 let tablet = document.querySelectorAll("img.tablet")
